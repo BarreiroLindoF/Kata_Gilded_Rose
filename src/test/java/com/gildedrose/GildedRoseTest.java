@@ -22,7 +22,7 @@ public class GildedRoseTest {
     }
 
     @Test
-    public void testQualityAfterSellIn0(){
+    public void testQualityAfterSellInIsZero(){
         for (int i = 0; i < 3; i++){app.updateQuality();}
         assertEquals(0, app.getItems()[0].quality);
     }

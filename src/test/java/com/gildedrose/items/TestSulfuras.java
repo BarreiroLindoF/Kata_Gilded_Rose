@@ -1,6 +1,5 @@
 package com.gildedrose.items;
 
-
 import com.gildedrose.GildedRose;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -15,7 +14,7 @@ public class TestSulfuras {
         Item[] items = new Item[] { new Sulfuras("Sulfuras", 6, 20) };
         app = new GildedRose(items);
     }
-
+    
     @Test
     public void testQualityAfterTenDays(){
         for(int i = 0; i < 10; i++){app.updateQuality();}

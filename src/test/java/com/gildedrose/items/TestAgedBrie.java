@@ -19,10 +19,18 @@ public class TestAgedBrie{
     @Test
     public void testQualityAfterTwoAndSixDays(){
         for (int i = 0; i < 2; i++){app.updateQuality();}
-        assertEquals(22, app.getItems()[0].quality);
-        for (int i = 0; i < 4; i++){app.updateQuality();}
+        assertEquals(22, app.getItems()[0].quality);        
+    }
+    
+    @Test
+    public void testQualityAfterSixDays(){
+        for (int i = 0; i < 6; i++){app.updateQuality();}
         assertEquals(26, app.getItems()[0].quality);
-        app.updateQuality();
+    }
+    
+    @Test
+    public void testQualityWhenSellInIsZero(){
+        for (int i = 0; i < 7; i++){app.updateQuality();}
         assertEquals(0, app.getItems()[0].quality);
     }
     

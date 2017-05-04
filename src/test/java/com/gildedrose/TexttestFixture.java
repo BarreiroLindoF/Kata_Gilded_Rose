@@ -1,3 +1,5 @@
+/* PLEASE NOTE : This class has not been modified. */
+
 package com.gildedrose;
 
 import com.gildedrose.items.AgedBrie;

@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class TestBackstagePass {
     
-    
     GildedRose app;
     
     @Before
@@ -17,19 +16,19 @@ public class TestBackstagePass {
     }
     
     @Test
-    public void TestAfter1Day(){
+    public void testQualityAfter1Day(){
         app.updateQuality();
         assertEquals(21, app.getItems()[0].quality);
     }
     
     @Test
-    public void TestAfter3Day(){
+    public void testQualityAfter3Days(){
         for (int i = 0; i < 3; i++){app.updateQuality();}
         assertEquals(25, app.getItems()[0].quality);
     }
     
     @Test
-    public void TestAfter7Day(){
+    public void testQualityAfter7Day(){
         for (int i = 0; i < 7; i++){app.updateQuality();}
         assertEquals(34, app.getItems()[0].quality);
     }
