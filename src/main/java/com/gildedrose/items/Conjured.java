@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.items;
 
 public class Conjured extends Item{
 
@@ -12,6 +12,7 @@ public class Conjured extends Item{
             quality = quality - 2;
         }
         sellIn = sellIn - 1;
+        checkQuality();
     }
     
 }

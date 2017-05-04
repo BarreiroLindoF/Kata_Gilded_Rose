@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.items;
 
 public class BackstagePass extends Item {
     
@@ -18,7 +18,7 @@ public class BackstagePass extends Item {
             if (quality < 50){
                 updateThisQuality(qualityUnder11);
             }
-        } else if (sellIn <= 0){
+        } else if (sellIn < 0){
             quality = 0;
         } else {
             updateThisQuality(qualityDefault);

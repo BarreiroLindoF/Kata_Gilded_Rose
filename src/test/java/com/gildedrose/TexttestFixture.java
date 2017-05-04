@@ -1,5 +1,11 @@
 package com.gildedrose;
 
+import com.gildedrose.items.AgedBrie;
+import com.gildedrose.items.BackstagePass;
+import com.gildedrose.items.Conjured;
+import com.gildedrose.items.Item;
+import com.gildedrose.items.Sulfuras;
+
 public class TexttestFixture {
     public static void main(String[] args) {
         System.out.println("OMGHAI!");
@@ -13,7 +19,6 @@ public class TexttestFixture {
                 new BackstagePass("Backstage passes to a TAFKAL80ETC concert", 15, 20),
                 new BackstagePass("Backstage passes to a TAFKAL80ETC concert", 10, 49),
                 new BackstagePass("Backstage passes to a TAFKAL80ETC concert", 5, 49),
-                // this conjured item does not work properly yet
                 new Conjured("Conjured Mana Cake", 3, 6) };
 
         GildedRose app = new GildedRose(items);

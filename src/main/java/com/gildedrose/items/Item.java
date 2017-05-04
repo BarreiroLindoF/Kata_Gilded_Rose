@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.items;
 
 public class Item {
 
@@ -19,11 +19,20 @@ public class Item {
         return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 
-    public void updateQuality(){}
+    public void updateQuality(){
+        if (quality > 0){
+            quality = quality - 1;
+        }
+        sellIn = sellIn - 1;
+        checkQuality();
+    }
     
     protected void checkQuality(){
         if (quality > 50){
             quality = 50;
+        } 
+        if(quality < 0 || sellIn < 0){
+            quality = 0;
         }
     }
 }
